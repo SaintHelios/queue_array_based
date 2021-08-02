@@ -38,7 +38,6 @@ template <typename T> void queue<T>::push(T to_add) {
 	else {
 		if (end != queue_array + array_size - 1) {
 			queue_array[next_end_index] = to_add;
-			head = queue_array;
 			end = queue_array + next_end_index;
 			++elements_amount;
 			++next_end_index;
