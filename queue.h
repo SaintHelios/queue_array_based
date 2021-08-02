@@ -59,7 +59,7 @@ template <typename T> void queue<T>::push(T to_add) {
 				++elements_amount;
 			}
 			else {
-				array_size += 20;
+				array_size *= 2;
 				T* copy_to = new T[array_size];
 				T* iterator = head;
 				for (size_t i = 0; i < elements_amount; ++i) {
